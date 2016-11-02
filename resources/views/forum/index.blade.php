@@ -16,7 +16,7 @@
                 @foreach($discussions as $discussion)
                         <div class="media">
                             <div class="media-left">
-                                <a href="#">
+                                <a href="/discussions/{{ $discussion->user->id }}">
                                     <img class="media-object img-circle" alt="64x64" width="50" src="{{ $discussion->user->avatar }}">
                                 </a>
                                 <div class="media-body">
