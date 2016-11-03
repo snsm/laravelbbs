@@ -44,7 +44,7 @@ class UsersController extends Controller
     public function store(Requests\UserRegisterRequest $request)
     {
        // dd($request->all());
-        User::create($request->all());
+        User::create(array_merge($request->all(),['avatar' => '/images/toux.jpg']));
         return redirect('/');
     }
 

@@ -30,4 +30,9 @@ class User extends Authenticatable
         return $this->hasMany(Discussion::class);
     }
 
+    public function setPasswordAttribute($password)
+    {
+        $this->attributes['password'] = \Hash::make($password);
+    }
+
 }

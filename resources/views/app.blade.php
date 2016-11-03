@@ -29,7 +29,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="active"><a href="./">登 录</a></li>
-                <li><a href="../navbar-fixed-top/">注 册</a></li>
+                <li><a href="/user/register">注 册</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
