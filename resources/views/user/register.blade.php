@@ -3,6 +3,14 @@
 @section('content')
     <div class="container">
 
+        @if($errors->any())
+            <div class="form-group">
+                @foreach($errors->all() as $error)
+                        {{ $error }}
+                    @endforeach
+            </div>
+        @endif
+
     {!! Form::open(['url'=>'/user/register']) !!}
         <div class="form-group">
             {!! Form::label('name','Name') !!}

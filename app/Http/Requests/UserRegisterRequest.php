@@ -30,4 +30,13 @@ class UserRegisterRequest extends Request
             'password_confirmation' => 'required|min:6',
         ];
     }
+
+    public function messages()
+    {
+        return [
+            'name.required' => '用户名是必填的！',
+            'name.unique' => '很抱歉，这个用户名已经被占用',
+        ];
+    }
+
 }
